@@ -1,0 +1,35 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO List</title>
+    <link rel="stylesheet" href="TODO_2_secondType.css">
+</head>
+<body>
+    <div id="todo-container">
+        <h1>TODO List</h1>
+        <div id="counter">
+            <p>Complete: <span id="complete">0</span></p>
+            <p>Incomplete: <span id="incomplete">0</span></p>
+            <p>Total Tasks: <span id="total">0</span></p>
+        </div>
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Enter your task">
+            <button onclick="addTask()">Add</button>
+        </div>
+        
+        <div id="section-buttons">
+            <button onclick="showSection('complete')">Complete</button>
+            <button onclick="showSection('incomplete')">Incomplete</button>
+            <button onclick="showSection('total')">Total</button>
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="TODO_2_secondType.js"></script>
+
+</body>
+</html> 
+
